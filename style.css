@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0 20px;
+}
+header{
+    background-color: #4caf50;
+    color:white;
+    text-align: center;
+    padding: 20px 0;
+}
+header h1{
+    margin-bottom: 15px;
+}
+nav ul{
+    list-style-type: none ;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+nav li ul a:hover{
+    text-decoration: underline;
+}
+section{
+    margin: 40px 0;
+}
+#sobre {
+    text-align: center;
+}
+#sobre img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+#dicas ul{
+    list-style-type: disc;
+    margin-left: 20px;
+}
+#dicas li{
+    margin-bottom: 10px;
+}
+.benficios h2{
+    text-align: center;
+    color: #2c6e1f;
+}
+.beneficios-itens{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+.beneficios-itens .itens h3 {
+    color: #4CAF50;
+}
+#produtos {
+    text-align: center;
+}
+
+.galeria-de-produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product p {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.product .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+.contato{
+    background-color: #fff;
+    padding: 40px;
+    margin: 30pc 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 30px;
+}
+h3{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+.informaçoes{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.info{
+    background-color:#f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.info p{
+    font-size: 1rem;
+    color: #666;
+}
+.form-contato{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: inline;
+}
+input,textarea{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #555;
+    transition: border-color 0.3s ease;
+}
+input:focus,textarea:focus {    
+    border-color: #66bb6a;
+    outline: none;
+}
+textarea{
+    resize: vertical;
+}
+button{
+    padding: 10px 20px;
+    background-color: #66bb6a;
+    color: #fff;
+    border:none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: #558c4d;
+}
+@media screen and (max-width: 768px) {
+    .beneficios-itens {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .galeria-de-produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .informacoes {
+        grid-template-columns: 1fr; /* Em telas menores, o grid vira uma coluna única */
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contato {
+        padding: 20px 10px; /* Menos espaçamento nas telas pequenas */
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
